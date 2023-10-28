@@ -18,7 +18,7 @@ def playlist_model(url, model, max_gen=3, same_art=5):
      uri = url.split('/')[-1].split('?')[0]
      try:
         log.append('spotify local method')
-        stream = open("Spotify/Spotify.yaml")
+        stream = open("Spotify.yaml")
         spotify_details = yaml.safe_load(stream)
         auth_manager = SpotifyClientCredentials(client_id=spotify_details['Client_id'], client_secret=spotify_details['client_secret'])
      except:
@@ -293,7 +293,7 @@ def top_tracks(url,region):
     uri = url.split('/')[-1].split('?')[0]
     try:
         log.append('spotify local method')
-        stream = open("Spotify/Spotify.yaml")
+        stream = open("Spotify.yaml")
         spotify_details = yaml.safe_load(stream)
         auth_manager = SpotifyClientCredentials(client_id=spotify_details['Client_id'], client_secret=spotify_details['client_secret'])
     except:
@@ -327,7 +327,7 @@ def song_model(url, model, max_gen=3, same_art=5):
      uri = url.split('/')[-1].split('?')[0]
      try:
         log.append('spotify local method')
-        stream = open("Spotify/Spotify.yaml")
+        stream = open("Spotify.yaml")
         spotify_details = yaml.safe_load(stream)
         auth_manager = SpotifyClientCredentials(client_id=spotify_details['Client_id'], client_secret=spotify_details['client_secret'])
      except:
