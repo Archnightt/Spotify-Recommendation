@@ -10,6 +10,7 @@ import pickle
 import streamlit as st
 import os
 
+
 def playlist_model(url, model, max_gen=3, same_art=5):
     log = []
     Fresult = []
